@@ -1,0 +1,109 @@
+
+
+
+* { margin: 0; padding: 0; }
+body { font: 14px Georgia, serif; }
+
+article, aside, figure, footer, header, hgroup,
+menu, nav, section { display: block; }
+
+h1 { font: bold 40px Helvetica, Sans-Serif; letter-spacing: -1px; margin: 0 0 30px 0; }
+h2 { font: bold 30px Helvetica, Sans-Serif; letter-spacing: -1px; margin: 0 0 10px 0; }
+
+#page-wrap { width: 80%; margin: 60px auto; }
+#page-wrap > div, #actual-table { margin: 0 0 50px 0; min-width: 500px; width: 100%; }
+
+.group:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.group { display: inline-block; }
+
+#flexbox {		
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-pack: start;
+  -webkit-box-align: start;
+	
+  display: -moz-box;
+  -moz-box-orient: horizontal;
+  -moz-box-pack: start;
+  -moz-box-align: start;
+	
+  display: box;
+  box-orient: horizontal;
+  box-pack: start;
+  box-align: start;
+	
+
+}
+#flexbox .col {
+  padding: 30px 3% 0;
+
+  margin-bottom: -99999px;
+  padding-bottom: 99999px;
+  height:100%;
+}
+#flexbox .col p {
+  margin-bottom: 100%;
+}
+#flexbox .col:nth-child(1) {
+  -moz-box-ordinal-group: 1;
+  -webkit-box-ordinal-group: 1;
+  box-ordinal-group: 1;
+  background: #ccc;
+  width: 10%;
+  overflow: hidden;
+}
+
+#flexbox .col:nth-child(2) {
+  -moz-box-ordinal-group: 2;
+  -webkit-box-ordinal-group: 2;
+  box-ordinal-group: 2;
+  background-size: auto;
+  width:90%;
+  background-repeat: no-repeat;
+  padding:0 0 0;
+  overflow: hidden;
+  
+}
+
+
+.smooth_zoom_preloader {
+		background-image: url(zoom_assets/preloader.gif);
+	}	
+
+	.smooth_zoom_icons {
+		background-image: url(zoom_assets/icons.png);
+	}
+
+	#zoom_containter .map{
+		width:100%;
+		
+	}
+
+	#zoom_container .landmarks{
+		position:absolute;
+		z-index:10;	
+		top:0px;
+		left:0px;
+		font-family: Helvetica, Arial, Verdana;
+		font-size:12px;
+		color: #ffffff;
+	}	
+	#zoom_container .landmarks .item {
+		position:absolute;		
+		text-align:center;		
+		display: none;	
+	}	
+	#zoom_container .landmarks .lable div {
+		width: 100px;
+		padding: 4px;		
+	}	
+	#zoom_container .landmarks .mark .text{
+		background-color:#000000;
+		padding:2px 6px;
