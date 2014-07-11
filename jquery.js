@@ -1,4 +1,4 @@
-$('#map').smoothZoom({
+$('#zoom_container').smoothZoom({
           width: 100%,
             height: 100%,
             pan_BUTTONS_SHOW: "YES",
